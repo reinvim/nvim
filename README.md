@@ -3,6 +3,8 @@
 
 A custom Neovim configuration for **mcreinii** that's publicly available for use.
 
+**Version - *1.0.1***
+
 ## Installation
 ```
 # Clone the repo, change the location accordingly.
