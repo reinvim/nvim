@@ -11,20 +11,27 @@ return {
 	---@type neotree.Config
 	opts = {
 		event_handlers = {
-
 			{
-				event = "file_open_requested",
+				event = "file_opened",
 				handler = function()
-					-- auto close
-					-- vim.cmd("Neotree close")
-					-- OR
 					require("neo-tree.command").execute({ action = "close" })
 				end,
 			},
 		},
+		filesystem = {
+			use_libuv_file_watcher = false,
+			follow_current_file = false,
+		},
+		git_status = {
+			enabled = false,
+		},
 	},
 	config = function(_, opts)
 		require("neo-tree").setup(opts)
+
+		if vim.fn.argc(-1) == 0 then
+			vim.cmd([[Neotree focus]])
+		end
 
 		local keymaps = require("core.keymaps")
 		keymaps.normalNR("<leader>e", ":Neotree toggle<CR>", "Open File Explorer.")
