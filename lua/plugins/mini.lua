@@ -24,5 +24,9 @@ return {
 				hex_color = hipatterns.gen_highlighter.hex_color(),
 			},
 		})
+
+		-- Surround
+		local mini_surround = require("mini.surround")
+		mini_surround.setup({})
 	end,
 }
