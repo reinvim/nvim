@@ -53,7 +53,7 @@ return {
 
 			-- Modes
 			local mode_colors = {
-				n = { bg = "#fcba03" },
+				n = { bg = "#ffaf00" },
 				i = { bg = "#c680ff" },
 				v = { bg = "#8be9fd" },
 				V = { bg = "#8be9fd" },
