@@ -27,3 +27,5 @@ options.cmdheight = 0 -- use minimal command line height (nvim 0.9+)
 options.termguicolors = true
 
 vim.opt.shortmess:append("I")
+
+vim.g.neovide_transparency = 0.8

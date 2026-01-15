@@ -79,8 +79,23 @@ return {
 			insert_to_left({ "filetype" })
 
 			-- Filename
+			function is_neotree_filesystem()
+				local buf_name = vim.api.nvim_buf_get_name(0)
+
+				-- Match buffer names like '/home/mcreinii/.config/neo-tree filesystem [1]'
+				if buf_name:match("neo%-tree") and buf_name:match("filesystem") then
+					return true
+				end
+				return false
+			end
+
 			insert_to_left({
-				"filename",
+				function()
+					if is_neotree_filesystem() then
+						return ""
+					end
+					return vim.fn.expand("%:r")
+				end,
 				path = 0, -- Shows relative path (0 for just the filename, 1 for relative path, 2 for full path)
 				shorting_target = 20, -- Maximum number of characters for the filename before truncating
 				symbols = { modified = " ", readonly = " ", unnamed = "[No Name]" }, -- Custom symbols for modified, readonly, unnamed files

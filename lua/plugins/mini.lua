@@ -4,15 +4,18 @@ return {
 	config = function(_, opts)
 		-- Notification
 		local mini_notify = require("mini.notify")
+
 		mini_notify.setup({
 			window = {
 				border = "single",
 				timeout = 5000,
-				winblend = 100,
+				winblend = 0,
 			},
 		})
-		vim.notify = MiniNotify.make_notify({ ERROR = { duration = 10000 } })
 
+		vim.notify = MiniNotify.make_notify()
+
+		-- Mini Icons
 		local mini_icons = require("mini.icons")
 		mini_icons.setup({})
 

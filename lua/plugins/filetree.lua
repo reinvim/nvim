@@ -20,7 +20,9 @@ return {
 		},
 		filesystem = {
 			use_libuv_file_watcher = false,
-			follow_current_file = false,
+			follow_current_file = {
+				enabled = true,
+			},
 		},
 		git_status = {
 			enabled = false,
