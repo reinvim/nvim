@@ -86,18 +86,6 @@ M.normalNR("<C-Down>", "<C-w>3-", "Decrease Height")
 M.normalR("<C-d>", "<C-d>zz", "Scroll Down (Centered)")
 M.normalR("<C-u>", "<C-u>zz", "Scroll Up (Centered)")
 
--- Navigate between windows with Shift + hjkl
-M.normalNR("<S-h>", "<C-w>h", "Move Focus Left")
-M.normalNR("<S-j>", "<C-w>j", "Move Focus Down")
-M.normalNR("<S-k>", "<C-w>k", "Move Focus Up")
-M.normalNR("<S-l>", "<C-w>l", "Move Focus Right")
-
--- Move the current window with Ctrl + Shift + hjkl
-M.normalNR("<C-S-h>", "<C-w>H", "Move Window Left")
-M.normalNR("<C-S-j>", "<C-w>J", "Move Window Down")
-M.normalNR("<C-S-k>", "<C-w>K", "Move Window Up")
-M.normalNR("<C-S-l>", "<C-w>L", "Move Window Right")
-
 -- Indentation
 M.normalNoOpt("+", ">", "Increment Indentation")
 M.normalNoOpt("-", "<", "Decrement Indentation")
