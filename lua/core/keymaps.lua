@@ -108,7 +108,7 @@ M.normalNR("<leader>sv", ":vsplit<CR>", "Vertical Split")
 M.normalNR("<leader>sh", ":split<CR>", "Horizontal Split")
 
 -- Terminal
-M.terminalNR("<Esc>", [[<C-\><C-n>]], "Quit Terminal Mode")
+M.terminalNR("<C-q>", [[<C-\><C-n>]], "Quit Terminal Mode")
 M.normalNR("<leader>tt", ":terminal<CR>", "Open in current Window") -- current window
 M.normalNR("<leader>th", ":split | terminal<CR>", "Open Horizontal") -- horizontal split
 M.normalNR("<leader>tv", ":vsplit | terminal<CR>", "Open Vertical") -- vertical split
