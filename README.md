@@ -2,7 +2,7 @@
 
 A custom Neovim configuration for **mcreinii** that's publicly available for use.
 
-**Version - _1.0.3_**
+**Version - _1.1.3_**
 
 ## Installation
 
