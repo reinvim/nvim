@@ -94,7 +94,7 @@ return {
 					if is_neotree_filesystem() then
 						return ""
 					end
-					return vim.fn.expand("%:r")
+					return vim.fn.expand("%:h:t") .. "/" .. vim.fn.expand("%:t")
 				end,
 				path = 0, -- Shows relative path (0 for just the filename, 1 for relative path, 2 for full path)
 				shorting_target = 20, -- Maximum number of characters for the filename before truncating
