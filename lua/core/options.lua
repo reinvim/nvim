@@ -18,6 +18,7 @@ options.smartcase = true
 options.ignorecase = true
 options.encoding = "utf8"
 options.backup = false
+options.clipboard = "unnamedplus"
 
 -- UI feels
 options.showmode = false -- no --INSERT-- mode line
@@ -28,4 +29,20 @@ options.termguicolors = true
 
 vim.opt.shortmess:append("I")
 
-vim.g.neovide_transparency = 0.8
+vim.g.neovide_opacity = 0.8
+
+vim.g.neovide_no_idle = true
+
+vim.g.neovide_cursor_animation_length = 0.1
+
+vim.g.neovide_floating_blur_amount_x = 0.0
+vim.g.neovide_floating_blur_amount_y = 0.0
+
+vim.g.neovide_antialias = false
+
+vim.opt.guifont = "IosevkaTerm Nerd Font Mono:h14" -- you can use any monospaced font
+
+vim.g.neovide_cursor_vfx_mode = "railgun" -- can be "none", "railgun", "pixiedust", etc.
+
+vim.g.neovide_refresh_rate = 60 -- Refresh rate in Hz
+vim.g.neovide_refresh_rate_idle = 10 -- Refresh rate when idle
