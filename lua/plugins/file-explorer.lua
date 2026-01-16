@@ -50,15 +50,15 @@ return {
 			},
 		},
 	},
+	keys = {
+		{ "<leader>e", ":Neotree toggle<CR>", silent = true, desc = "Open File Explorer." },
+	},
 	config = function(_, opts)
 		require("neo-tree").setup(opts)
 
 		if vim.fn.argc(-1) == 0 then
 			vim.cmd([[Neotree focus]])
 		end
-
-		local keymaps = require("core.keymaps")
-		keymaps.normalNR("<leader>e", ":Neotree toggle<CR>", "Open File Explorer.")
 
 		local wk = require("which-key")
 
