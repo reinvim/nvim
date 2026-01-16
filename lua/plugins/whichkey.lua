@@ -18,6 +18,7 @@ return {
 			{ "<leader>s", group = "Split", icon = " " },
 			{ "<leader>b", group = "Buffers", icon = " " },
 			{ "<leader>p", group = "Packages", icon = " " },
+			{ "<leader>g", group = "LazyGit", icon = " " },
 			{ "<leader>]", group = "Terminal", icon = " " },
 			{ "<leader>[", group = "Jump Up", icon = " " },
 			{ "<leader>]", group = "Jump Down", icon = " " },
