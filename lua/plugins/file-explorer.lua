@@ -27,6 +27,28 @@ return {
 		git_status = {
 			enabled = false,
 		},
+		default_component_configs = {
+			git_status = {
+				icon = {
+					folder_closed = "",
+					folder_open = "",
+					folder_empty = "󰜌",
+					folder_empty_open = "󰜌",
+					default = "",
+				},
+				symbols = {
+					added = "✚",
+					modified = "",
+					deleted = "✖",
+					renamed = "󰁕",
+					untracked = "",
+					ignored = "",
+					unstaged = "󰄱",
+					staged = "󰄲",
+					conflict = "",
+				},
+			},
+		},
 	},
 	config = function(_, opts)
 		require("neo-tree").setup(opts)
